@@ -2,34 +2,24 @@
 @tailwind components;
 @tailwind utilities;
 
-body { font-family: 'Inter', sans-serif; }
-
-/* Letreiro Dinâmico (Ticker) */
 .animate-scroll {
   display: flex;
   white-space: nowrap;
   width: max-content;
-  animation: scroll 30s linear infinite;
+  /* Velocidade ajustada para 40s para ser mais elegante e legível */
+  animation: scroll 40s linear infinite;
+  /* O segredo da fluidez e do score alto */
+  will-change: transform;
+  transform: translate3d(0, 0, 0);
 }
 
 @keyframes scroll {
-  0% { transform: translateX(0); }
-  100% { transform: translateX(-50%); }
+  0% { transform: translate3d(0, 0, 0); }
+  100% { transform: translate3d(-50%, 0, 0); }
 }
 
-/* Estilos de Card e Comentários */
-.pr-card { background: white; border: 2px solid #e2e8f0; border-radius: 8px; padding: 2rem 1.5rem; text-align: center; position: relative; display: flex; flex-direction: column; }
-.pr-card--highlight { border: 3px solid #FD4C31; box-shadow: 0 10px 25px -5px rgba(253, 76, 49, 0.2); }
-.pr-badge { position: absolute; top: -14px; left: 50%; transform: translateX(-50%); background: #1e293b; color: white; padding: 4px 16px; border-radius: 20px; font-size: 0.85rem; font-weight: 700; white-space: nowrap; text-transform: uppercase; }
-.pr-badge--highlight { background: #facc15; color: #1e293b; }
-.pr-title { font-size: 1.75rem; font-weight: 900; color: #0f172a; margin: 0.5rem 0 0.25rem 0; }
-.pr-img { max-width: 100%; height: 180px; object-fit: contain; margin: 0 auto 1.5rem auto; }
-.pr-now { font-size: 4.5rem; font-weight: 900; letter-spacing: -2px; color: #0f172a; }
-.pr-card--highlight .pr-now { color: #FD4C31; }
-.pr-btn { display: flex; align-items: center; justify-content: center; gap: 8px; background: #00A815; color: white; text-decoration: none; padding: 16px; border-radius: 6px; font-size: 1.25rem; font-weight: 900; text-transform: uppercase; transition: all 0.2s; }
-.pr-btn:hover { background: #008f12; transform: translateY(-2px); }
-
-.fb-comment-bubble { background: #f0f2f5; border-radius: 18px; padding: 8px 12px; position: relative; }
-.fb-author { font-weight: 600; font-size: 13px; color: #050505; }
-.fb-text { font-size: 15px; color: #050505; line-height: 1.33; }
+.fb-comment-bubble { background: #f0f2f5; border-radius: 18px; padding: 10px 14px; }
+.fb-author { font-weight: 700; font-size: 13px; color: #050505; }
+.fb-text { font-size: 14px; color: #050505; line-height: 1.4; margin-top: 2px; }
+.fb-actions { display: flex; gap: 10px; margin-top: 4px; padding-left: 10px; font-size: 12px; font-weight: 600; color: #65676b; }
 .esconder { display: none; }
