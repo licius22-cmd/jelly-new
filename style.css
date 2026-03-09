@@ -4,9 +4,27 @@
 
 body { font-family: 'Inter', sans-serif; }
 
+/* Garante que o conteúdo não quebre linha e use flexbox para alinhar os spans */
+.animate-scroll {
+  display: flex;
+  white-space: nowrap;
+  width: max-content; /* Importante para o cálculo do movimento */
+}
+
 @media (prefers-reduced-motion: no-preference) {
   .animate-scroll {
-    animation: scroll 20s linear infinite;
+    /* Ajuste os 20s para mais rápido ou mais lento */
+    animation: scroll 30s linear infinite;
+  }
+}
+
+/* Definição do movimento: move o container para a esquerda */
+@keyframes scroll {
+  0% {
+    transform: translateX(0);
+  }
+  100% {
+    transform: translateX(-50%); /* Move metade do conteúdo para um loop infinito perfeito */
   }
 }
 
