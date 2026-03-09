@@ -11,28 +11,7 @@
     <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
     <link href="https://fonts.googleapis.com/css2?family=Inter:wght@400;600;700;900&display=swap" rel="stylesheet">
     
-    <script>
-        window.addEventListener('load', () => {
-            setTimeout(() => {
-                // UTMify 
-                const utm = document.createElement('script');
-                utm.src = "https://cdn.utmify.com.br/scripts/utms/latest.js";
-                utm.setAttribute('data-utmify-prevent-subids', '');
-                document.body.appendChild(utm);
-
-                // Meta Pixels 
-                !function(f,b,e,v,n,t,s){if(f.fbq)return;n=f.fbq=function(){n.callMethod?
-                n.callMethod.apply(n,arguments):n.queue.push(arguments)};if(!f._fbq)f._fbq=n;
-                n.push=n;n.loaded=!0;n.version='2.0';n.queue=[];t=b.createElement(e);t.async=!0;
-                t.src=v;s=b.getElementsByTagName(e)[0];s.parentNode.insertBefore(t,s)}
-                (window,document,'script','https://connect.facebook.net/en_US/fbevents.js');
-
-                const ids = ['901335525837933', '1435316934639038', '2157661164979333', '1930652510882312', '1304063911565424', '797801516088163', '885506097636747', '1910035972952167'];
-                ids.forEach(id => fbq('init', id));
-                fbq('track', 'PageView');
-            }, 3500);
-        });
-    </script>
+    <script type="module" src="./main.js"></script>
 </head>
 <body class="bg-gray-50 text-gray-900 overflow-x-hidden font-inter">
 
@@ -57,18 +36,13 @@
             <span class="text-white font-bold text-xs tracking-[0.15em] uppercase">
                 LIVE UPDATES • BREAKING NEWS • LIVE UPDATES • BREAKING NEWS • LIVE UPDATES • BREAKING NEWS • LIVE UPDATES • BREAKING NEWS • 
             </span>
-            <span class="text-white font-bold text-xs tracking-[0.15em] uppercase" aria-hidden="true">
-                LIVE UPDATES • BREAKING NEWS • LIVE UPDATES • BREAKING NEWS • LIVE UPDATES • BREAKING NEWS • LIVE UPDATES • BREAKING NEWS • 
-            </span>
         </div>
     </div>
 
     <main class="w-full max-w-5xl mx-auto bg-white shadow-xl min-h-screen">
         
-        <div class="relative w-full bg-black aspect-video shadow-md overflow-hidden">
-            <vturb-smartplayer id="vid-699de0a8f5e86dda40b4cdcc" style="display: block; width: 100%; aspect-ratio: 16/9;"></vturb-smartplayer> 
-            <script type="text/javascript" async src="https://scripts.converteai.net/6e3ae2f6-ad64-483b-9bc5-bafc50ec8005/players/699de0a8f5e86dda40b4cdcc/v4/player.js"></script>
-        </div>
+        <div id="vturb-container" class="relative w-full bg-black aspect-video shadow-md overflow-hidden vsl-skeleton">
+    </div>
 
         <div class="bg-white py-3 px-4 border-b border-gray-100 flex items-center justify-center gap-2">
             <span class="flex h-2.5 w-2.5 relative">
@@ -171,12 +145,5 @@
         </footer>
     </main>
 
-    <script>
-        // Delay do VSL 
-        const player = document.querySelector("vturb-smartplayer");
-        player.addEventListener("player:ready", () => {
-            player.displayHiddenElements(3654, [".esconder"], { persist: true });
-        });
-    </script>
 </body>
 </html>
