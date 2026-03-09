@@ -1,15 +1,16 @@
 <!DOCTYPE html>
-<html lang="en">
-<head>
+<html lang="en"> <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Health News - Special Report</title>
+    
+    <title>Health News - Special Report: The Gelatin Secret</title>
+    <meta name="description" content="Special report on health updates and the truth about nutritional supplements. Watch the presentation.">
+    <link rel="canonical" href="https://seusite.com/">
     
     <link rel="stylesheet" href="./style.css">
-    
-    <link rel="dns-prefetch" href="https://cdn.converteai.net">
-    <link rel="dns-prefetch" href="https://scripts.converteai.net">
-    <link rel="preload" href="https://scripts.converteai.net/lib/js/smartplayer-wc/v4/smartplayer.js" as="script">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Inter:wght@400;700;900&display=swap" rel="stylesheet">
     
     <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css" media="print" onload="this.media='all'">
 </head>
@@ -17,26 +18,31 @@
 
     <header class="bg-black px-4 py-4 w-full shadow-md relative z-20">
         <div class="max-w-5xl mx-auto flex items-center justify-between">
+            <button class="text-white p-2" aria-label="Menu de Navegação">
+                <svg width="24" height="24" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><line x1="4" x2="20" y1="12" y2="12"></line><line x1="4" x2="20" y1="6" y2="6"></line><line x1="4" x2="20" y1="18" y2="18"></line></svg>
+            </button>
             <h1 class="text-white text-2xl font-semibold tracking-wide">Health<span class="text-[#FD4C31]">News</span></h1>
-            <div class="text-white text-xs font-bold border border-white/30 px-2 py-1 rounded uppercase">Special Report</div>
+            <button class="text-white p-2" aria-label="Pesquisar">
+                <svg width="24" height="24" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><circle cx="11" cy="11" r="8"></circle><path d="m21 21-4.3-4.3"></path></svg>
+            </button>
         </div>
     </header>
 
     <div class="bg-[#FD4C31] py-2 overflow-hidden w-full relative z-10">
         <div class="animate-scroll">
             <span class="text-white font-bold text-xs tracking-[0.15em] uppercase">
-                LIVE UPDATES • BREAKING NEWS • LIVE UPDATES • BREAKING NEWS • LIVE UPDATES • BREAKING NEWS • LIVE UPDATES • BREAKING NEWS • 
+                LIVE UPDATES • BREAKING NEWS • LIVE UPDATES • BREAKING NEWS • LIVE UPDATES • BREAKING NEWS • 
             </span>
-            <span class="text-white font-bold text-xs tracking-[0.15em] uppercase">
-                LIVE UPDATES • BREAKING NEWS • LIVE UPDATES • BREAKING NEWS • LIVE UPDATES • BREAKING NEWS • LIVE UPDATES • BREAKING NEWS • 
+            <span class="text-white font-bold text-xs tracking-[0.15em] uppercase" aria-hidden="true">
+                LIVE UPDATES • BREAKING NEWS • LIVE UPDATES • BREAKING NEWS • LIVE UPDATES • BREAKING NEWS • 
             </span>
         </div>
     </div>
 
     <main class="w-full max-w-5xl mx-auto bg-white shadow-xl min-h-screen">
         
-        <div class="relative w-full bg-black aspect-video shadow-md">
-            <vturb-smartplayer id="vid-699de0a8f5e86dda40b4cdcc" style="display: block; width: 100%; "></vturb-smartplayer> 
+        <div class="relative w-full bg-black aspect-video shadow-md overflow-hidden">
+            <vturb-smartplayer id="vid-699de0a8f5e86dda40b4cdcc" style="display: block; width: 100%; aspect-ratio: 16/9;"></vturb-smartplayer> 
             <script type="text/javascript" async src="https://scripts.converteai.net/6e3ae2f6-ad64-483b-9bc5-bafc50ec8005/players/699de0a8f5e86dda40b4cdcc/v4/player.js"></script>
         </div>
 
@@ -45,88 +51,47 @@
                 <span class="animate-ping absolute inline-flex h-full w-full rounded-full bg-red-400 opacity-75"></span>
                 <span class="relative inline-flex rounded-full h-2.5 w-2.5 bg-[#FD4C31]"></span>
             </span>
-            <span class="text-gray-700 font-bold text-sm"><span id="viewer-count">8.613</span> people watching now</span>
+            <span class="text-gray-700 font-bold text-sm">8.613 people watching now</span>
         </div>
 
-        <div class="bg-white py-8 px-4">
-           <div class="flex items-center justify-center gap-6 md:gap-12 flex-wrap">
-               <img src="images/abc_logo.webp" alt="ABC" class="h-8 opacity-50 grayscale" loading="lazy">
-               <img src="images/cnn_logo.webp" alt="CNN" class="h-8 opacity-50 grayscale" loading="lazy">
-               <img src="images/nbc_logo.webp" alt="NBC" class="h-8 opacity-50 grayscale" loading="lazy">
-               <img src="images/cbs_logo.svg" alt="CBS" class="h-8 opacity-50 grayscale" loading="lazy">
+        <div class="bg-white py-6 px-4">
+           <div class="flex items-center justify-center gap-8 flex-wrap">
+               <img src="images/abc_logo.webp" alt="ABC Logo" width="60" height="30" loading="lazy" class="grayscale opacity-60">
+               <img src="images/cnn_logo.webp" alt="CNN Logo" width="60" height="30" loading="lazy" class="grayscale opacity-60">
+               <img src="images/nbc_logo.webp" alt="NBC Logo" width="60" height="30" loading="lazy" class="grayscale opacity-60">
+               <img src="images/cbs_logo.webp" alt="CBS Logo" width="60" height="30" loading="lazy" class="grayscale opacity-60">
            </div>
         </div>
 
         <section id="secao_pitch" class="esconder bg-[#f9f9f9] px-4 py-12 border-t border-gray-200">
             <div class="max-w-5xl mx-auto">
-                <div class="text-center mb-10">
-                    <h2 class="text-3xl font-black text-gray-900 mb-2 uppercase tracking-tight">Special Offer</h2>
-                    <p class="text-gray-600 font-medium">Choose your package below</p>
-                </div>
+                <h2 class="text-3xl font-black text-center text-gray-900 mb-10 uppercase">Special Discount Packages</h2>
 
                 <div class="grid grid-cols-1 md:grid-cols-3 gap-8 items-start">
-                    
                     <div class="pr-card pr-card--highlight">
                         <div class="pr-badge pr-badge--highlight">BEST VALUE!</div>
                         <h3 class="pr-title">6 BOTTLES</h3>
-                        <div class="pr-subtitle">180 Day Supply</div>
-                        <img src="images/6.png" alt="6 bottles" class="pr-img" loading="lazy">
-                        <div class="pr-pricing">
-                            <div class="pr-was">$799</div>
-                            <div class="pr-now-wrapper">
-                                <span class="pr-currency">$</span>
-                                <span class="pr-now">294</span>
-                            </div>
-                            <div class="pr-shipping">FREE SHIPPING</div>
-                        </div>
-                        <ul class="pr-list">
-                            <li class="highlight-bullet"><i class="fa-solid fa-star"></i> YOU SAVE $505</li>
-                            <li><i class="fa-solid fa-circle-check"></i> 63% DISCOUNT</li>
-                            <li style="color: #60a5fa;"><i class="fa-solid fa-gift"></i> + SURPRISE 🎁</li>
-                        </ul>
-                        <a class="pr-btn smartplayer-click-event" href="SEU_LINK_CHECKOUT_6_POTES">BUY NOW <i class="fa-solid fa-arrow-right"></i></a>
+                        <img src="images/6.webp" alt="Seis potes do suplemento" width="200" height="180" class="pr-img" loading="lazy">
+                        <div class="pr-now-wrapper"><span class="pr-currency">$</span><span class="pr-now">294</span></div>
+                        <a class="pr-btn smartplayer-click-event" href="https://enduroxprime.mycartpanda.com/checkout/205297694:1?afid=MWT2LwT537">BUY NOW <i class="fa-solid fa-arrow-right"></i></a>
                         <div class="pr-guarantee-btn-text"><i class="fa-solid fa-shield-halved"></i> 90 DAYS GUARANTEE</div>
                     </div>
 
                     <div class="pr-card">
-                        <div class="pr-badge">Most Popular</div>
+                        <div class="pr-badge">Popular</div>
                         <h3 class="pr-title">3 BOTTLES</h3>
-                        <div class="pr-subtitle">90 Day Supply</div>
-                        <img src="images/3.png" alt="3 bottles" class="pr-img" loading="lazy">
-                        <div class="pr-pricing">
-                            <div class="pr-was">$347</div>
-                            <div class="pr-now-wrapper">
-                                <span class="pr-currency">$</span>
-                                <span class="pr-now">217</span>
-                            </div>
-                            <div class="pr-shipping">FREE SHIPPING</div>
-                        </div>
-                        <ul class="pr-list">
-                            <li class="highlight-bullet"><i class="fa-solid fa-circle-check"></i> YOU SAVE $130!</li>
-                            <li><i class="fa-solid fa-check"></i> 1 FREE BOTTLE</li>
-                        </ul>
-                        <a class="pr-btn smartplayer-click-event" href="SEU_LINK_CHECKOUT_3_POTES">BUY NOW <i class="fa-solid fa-arrow-right"></i></a>
+                        <img src="images/3.webp" alt="Três potes do suplemento" width="200" height="180" class="pr-img" loading="lazy">
+                        <div class="pr-now-wrapper"><span class="pr-currency">$</span><span class="pr-now">217</span></div>
+                        <a class="pr-btn smartplayer-click-event" href="https://enduroxprime.mycartpanda.com/checkout/205297693:1?afid=MWT2LwT537">BUY NOW</a>
                     </div>
 
                     <div class="pr-card">
                         <div class="pr-badge">Basic</div>
                         <h3 class="pr-title">2 BOTTLES</h3>
-                        <div class="pr-subtitle">60 Day Supply</div>
-                        <img src="images/2.png" alt="2 bottles" class="pr-img" loading="lazy">
-                        <div class="pr-pricing">
-                            <div class="pr-was">$217</div>
-                            <div class="pr-now-wrapper">
-                                <span class="pr-currency">$</span>
-                                <span class="pr-now">177</span>
-                            </div>
-                            <div class="pr-shipping" style="background: #f1f5f9; color: #64748b;">+ $9.99 SHIPPING</div>
-                        </div>
-                        <ul class="pr-list">
-                            <li><i class="fa-solid fa-check"></i> 15% DISCOUNT</li>
-                        </ul>
-                        <a class="pr-btn smartplayer-click-event" href="SEU_LINK_CHECKOUT_2_POTES">BUY NOW <i class="fa-solid fa-arrow-right"></i></a>
+                        <img src="images/2.webp" alt="Dois potes do suplemento" width="200" height="180" class="pr-img" loading="lazy">
+                        <div class="pr-now-wrapper"><span class="pr-currency">$</span><span class="pr-now">177</span></div>
+                        <a class="pr-btn smartplayer-click-event" href="https://enduroxprime.mycartpanda.com/checkout/205297692:1?afid=MWT2LwT537">BUY NOW</a>
                     </div>
-
                 </div>
             </div>
         </section>
@@ -135,11 +100,11 @@
             <h3 class="font-bold text-gray-900 text-lg border-b pb-3 mb-6">3,158 Comments</h3>
             <div class="space-y-6">
                 <div class="flex gap-2">
-                    <img src="https://i.pravatar.cc/150?img=10" class="w-9 h-9 rounded-full" loading="lazy">
+                    <img src="https://i.pravatar.cc/150?img=10" alt="Avatar" width="36" height="36" class="rounded-full" loading="lazy">
                     <div>
                         <div class="fb-comment-bubble">
                             <div class="fb-author">Abigail Walker</div>
-                            <div class="fb-text">This finally feels different. I lost 14 pounds in 10 days with the recipe!</div>
+                            <div class="fb-text">This finally feels different. I lost 14 pounds in 10 days!</div>
                         </div>
                         <div class="fb-actions"><button>Like</button> · <button>Reply</button> · <span>2h</span></div>
                     </div>
@@ -148,58 +113,62 @@
         </section>
 
         <footer class="bg-gray-900 py-10 text-center text-gray-500 text-[11px] px-4">
-            <p class="mb-4">*This product is not intended to diagnose, treat, cure, or prevent any disease.</p>
-            <div class="flex justify-center gap-4 mb-4">
-                <a href="#" class="hover:text-white">Terms</a>
-                <a href="#" class="hover:text-white">Privacy</a>
+            <p>*Results may vary. This product is not intended to diagnose or cure diseases.</p>
+            <div class="flex justify-center gap-6 my-4 text-[13px] font-bold">
+                <a href="#" class="hover:text-white underline">Terms</a>
+                <a href="#" class="hover:text-white underline">Privacy Policy</a>
             </div>
             <p>© 2026 Health News. All rights reserved.</p>
         </footer>
     </main>
 
-   <script>
-    let trackingLoaded = false;
-    const loadTracking = () => {
-        if (trackingLoaded) return;
-        trackingLoaded = true;
+    <script>
+        var delaySeconds = 3654;
+        var player = document.querySelector("vturb-smartplayer");
+        player.addEventListener("player:ready", function() {
+            player.displayHiddenElements(delaySeconds, [".esconder"], { persist: true });
+        });
 
-        // 1. UTMify (Rastreamento de URL)
-        const utmScript = document.createElement('script');
-        utmScript.src = "https://cdn.utmify.com.br/scripts/utms/latest.js";
-        utmScript.setAttribute('data-utmify-prevent-subids', '');
-        utmScript.async = true;
-        document.body.appendChild(utmScript);
+        // Carregamento Inteligente de Tracking (Anti-Bloqueio PageSpeed)
+        let trackingIniciado = false;
+        const loadTracking = () => {
+            if (trackingIniciado) return;
+            trackingIniciado = true;
 
-        // 2. Meta Pixels (Os seus 8 IDs originais)
-        !function(f,b,e,v,n,t,s) {
-            if(f.fbq)return;n=f.fbq=function(){n.callMethod?
-            n.callMethod.apply(n,arguments):n.queue.push(arguments)};
-            if(!f._fbq)f._fbq=n;n.push=n;n.loaded=!0;n.version='2.0';
-            n.queue=[];t=b.createElement(e);t.async=!0;
-            t.src=v;s=b.getElementsByTagName(e)[0];
-            s.parentNode.insertBefore(t,s)
-        }(window, document,'script','https://connect.facebook.net/en_US/fbevents.js');
+            // 1. UTMify
+            const utmScript = document.createElement('script');
+            utmScript.src = "https://cdn.utmify.com.br/scripts/utms/latest.js";
+            utmScript.setAttribute('data-utmify-prevent-subids', '');
+            utmScript.async = true;
+            document.body.appendChild(utmScript);
 
-        const pixelIds = [
-            '901335525837933', '1435316934639038', '2157661164979333', 
-            '1930652510882312', '1304063911565424', '797801516088163', 
-            '885506097636747', '1910035972952167'
-        ];
+            // 2. Meta Pixels (8 IDs incluídos)
+            !function(f,b,e,v,n,t,s) {
+                if(f.fbq)return;n=f.fbq=function(){n.callMethod?
+                n.callMethod.apply(n,arguments):n.queue.push(arguments)};
+                if(!f._fbq)f._fbq=n;n.push=n;n.loaded=!0;n.version='2.0';
+                n.queue=[];t=b.createElement(e);t.async=!0;
+                t.src=v;s=b.getElementsByTagName(e)[0];
+                s.parentNode.insertBefore(t,s)
+            }(window, document,'script','https://connect.facebook.net/en_US/fbevents.js');
 
-        pixelIds.forEach(id => fbq('init', id));
-        fbq('track', 'PageView');
-    };
+            const pixelIds = [
+                '901335525837933', '1435316934639038', '2157661164979333', 
+                '1930652510882312', '1304063911565424', '797801516088163', 
+                '885506097636747', '1910035972952167'
+            ]; [cite: 1]
 
-    // Dispara no scroll, clique ou após 3 segundos
-    const interactions = ['scroll', 'mousemove', 'touchstart', 'click'];
-    interactions.forEach(event => {
-        window.addEventListener(event, loadTracking, { once: true, passive: true });
-    });
-    setTimeout(loadTracking, 3000);
-</script>
+            pixelIds.forEach(id => fbq('init', id));
+            fbq('track', 'PageView');
+        };
 
-<noscript>
-    <img height="1" width="1" style="display:none" src="https://www.facebook.com/tr?id=901335525837933&ev=PageView&noscript=1"/>
-</noscript>
+        // Ativa tracking após interação ou 3.5s
+        ['scroll', 'click', 'touchstart'].forEach(ev => window.addEventListener(ev, loadTracking, {once:true}));
+        setTimeout(loadTracking, 3500);
+    </script>
+
+    <noscript>
+        <img height="1" width="1" style="display:none" src="https://www.facebook.com/tr?id=901335525837933&ev=PageView&noscript=1"/>
+    </noscript>
 </body>
 </html>
