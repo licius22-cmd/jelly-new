@@ -88,55 +88,415 @@
             </div>
         </section>
 
-        <section class="bg-white px-4 py-10 max-w-4xl mx-auto border-t border-gray-100">
-            <h3 class="font-bold text-gray-900 text-lg border-b pb-3 mb-8">3,158 Comments</h3>
-            
+       <section class="bg-white px-4 py-10 md:px-10 max-w-4xl mx-auto">
+            <div class="flex items-center gap-2 mb-6 pb-3 border-b border-gray-200">
+                <span class="font-bold text-gray-900 text-lg tracking-tight">3,158 Comments</span>
+                <span class="text-gray-400 font-normal ml-auto text-sm">Sort by </span>
+                <span class="text-[#1877f2] font-semibold text-sm cursor-pointer hover:underline">Top</span>
+            </div>
+
             <div class="space-y-6">
-                <div class="flex gap-3">
-                    <img src="https://i.pravatar.cc/150?img=10" alt="Abigail" width="40" height="40" class="rounded-full h-10 w-10" loading="lazy">
-                    <div class="flex-1">
-                        <div class="fb-comment-bubble">
-                            <div class="fb-author">Abigail Walker</div>
-                            <div class="fb-text">I swear I thought this was just another boring scam video… Hearing Jillian Michaels explain the true gelatin trick actually made me stay and watch.</div>
+                <div>
+                    <div class="flex gap-2">
+                        <img src="https://i.pravatar.cc/150?img=10" alt="Avatar" width="36" height="36" loading="lazy" class="rounded-full flex-shrink-0 cursor-pointer">
+                        <div class="flex-1 min-w-0">
+                            <div class="fb-comment-bubble w-fit">
+                                <div class="fb-author">Abigail Walker</div>
+                                <div class="fb-text">I swear I thought this was just another one of those long, boring scam videos… But hearing Jillian Michaels explain the true gelatin trick actually made me stay and watch. This finally feels different.</div>
+                                <div class="fb-like-count-box">
+                                    <div class="w-3.5 h-3.5 fb-like-icon"></div>
+                                    <span class="fb-like-count-text">42</span>
+                                </div>
+                            </div>
+                            <div class="fb-actions">
+                                <button>Like</button> · <button>Reply</button> · <span class="font-normal">2h</span>
+                            </div>
                         </div>
-                        <div class="fb-actions"><button>Like</button> · <button>Reply</button> · <span>2h</span></div>
+                    </div>
+                    <div class="flex gap-2 ml-11 mt-3">
+                        <img src="https://i.pravatar.cc/150?img=5" alt="Avatar" width="32" height="32" loading="lazy" class="rounded-full flex-shrink-0 cursor-pointer">
+                        <div class="flex-1 min-w-0">
+                            <div class="fb-comment-bubble w-fit">
+                                <div class="fb-author">Katherine Lewis</div>
+                                <div class="fb-text">Same here. When she said most gelatin recipes were taught wrong on purpose, it clicked instantly.</div>
+                                <div class="fb-like-count-box">
+                                    <div class="w-3.5 h-3.5 fb-like-icon"></div>
+                                    <span class="fb-like-count-text">28</span>
+                                </div>
+                            </div>
+                            <div class="fb-actions">
+                                <button>Like</button> · <button>Reply</button> · <span class="font-normal">1h</span>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="flex gap-2 ml-11 mt-3">
+                        <img src="https://i.pravatar.cc/150?img=9" alt="Avatar" width="32" height="32" loading="lazy" class="rounded-full flex-shrink-0 cursor-pointer">
+                        <div class="flex-1 min-w-0">
+                            <div class="fb-comment-bubble w-fit">
+                                <div class="fb-author">Amanda Miller</div>
+                                <div class="fb-text">Exactly. I've wasted hours on fake videos before. This one felt like Jillian was calling out the scams directly.</div>
+                                <div class="fb-like-count-box">
+                                    <div class="w-3.5 h-3.5 fb-like-icon"></div>
+                                    <span class="fb-like-count-text">23</span>
+                                </div>
+                            </div>
+                            <div class="fb-actions">
+                                <button>Like</button> · <button>Reply</button> · <span class="font-normal">45m</span>
+                            </div>
+                        </div>
                     </div>
                 </div>
 
-                <div class="flex gap-3 ml-12">
-                    <img src="https://i.pravatar.cc/150?img=5" alt="Katherine" width="32" height="32" class="rounded-full h-8 w-8" loading="lazy">
-                    <div class="flex-1">
-                        <div class="fb-comment-bubble">
-                            <div class="fb-author">Katherine Lewis</div>
-                            <div class="fb-text">Same here. When she said most gelatin recipes were taught wrong on purpose, it clicked instantly.</div>
+                <div>
+                    <div class="flex gap-2">
+                        <img src="https://i.pravatar.cc/150?img=24" alt="Avatar" width="36" height="36" loading="lazy" class="rounded-full flex-shrink-0 cursor-pointer">
+                        <div class="flex-1 min-w-0">
+                            <div class="fb-comment-bubble w-fit">
+                                <div class="fb-author">Suzy Green</div>
+                                <div class="fb-text">Honest question… is this legit or just another marketing hype?</div>
+                                <div class="fb-like-count-box">
+                                    <div class="w-3.5 h-3.5 fb-like-icon"></div>
+                                    <span class="fb-like-count-text">45</span>
+                                </div>
+                            </div>
+                            <div class="fb-actions">
+                                <button>Like</button> · <button>Reply</button> · <span class="font-normal">3h</span>
+                            </div>
                         </div>
-                        <div class="fb-actions"><button>Like</button> · <button>Reply</button> · <span>1h</span></div>
+                    </div>
+                    <div class="flex gap-2 ml-11 mt-3">
+                        <img src="https://i.pravatar.cc/150?img=20" alt="Avatar" width="32" height="32" loading="lazy" class="rounded-full flex-shrink-0 cursor-pointer">
+                        <div class="flex-1 min-w-0">
+                            <div class="fb-comment-bubble w-fit">
+                                <div class="fb-author">Alyssa Stewart</div>
+                                <div class="fb-text">I asked myself the same thing. I stayed skeptical until Jillian explained why the fake gelatin tricks never worked.</div>
+                                <div class="fb-like-count-box">
+                                    <div class="w-3.5 h-3.5 fb-like-icon"></div>
+                                    <span class="fb-like-count-text">31</span>
+                                </div>
+                            </div>
+                            <div class="fb-actions">
+                                <button>Like</button> · <button>Reply</button> · <span class="font-normal">2h</span>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="flex gap-2 ml-11 mt-3">
+                        <img src="https://i.pravatar.cc/150?img=23" alt="Avatar" width="32" height="32" loading="lazy" class="rounded-full flex-shrink-0 cursor-pointer">
+                        <div class="flex-1 min-w-0">
+                            <div class="fb-comment-bubble w-fit">
+                                <div class="fb-author">Jordan Baker</div>
+                                <div class="fb-text">The part about losing 14 pounds in 10 days with the correct gelatin recipe is what made me keep watching.</div>
+                                <div class="fb-like-count-box">
+                                    <div class="w-3.5 h-3.5 fb-like-icon"></div>
+                                    <span class="fb-like-count-text">38</span>
+                                </div>
+                            </div>
+                            <div class="fb-actions">
+                                <button>Like</button> · <button>Reply</button> · <span class="font-normal">2h</span>
+                            </div>
+                        </div>
                     </div>
                 </div>
 
-                <div class="flex gap-3">
-                    <img src="https://i.pravatar.cc/150?img=24" alt="Suzy" width="40" height="40" class="rounded-full h-10 w-10" loading="lazy">
-                    <div class="flex-1">
-                        <div class="fb-comment-bubble">
-                            <div class="fb-author">Suzy Green</div>
-                            <div class="fb-text">Honest question… is this legit or just another marketing hype?</div>
+                <div>
+                    <div class="flex gap-2">
+                        <img src="https://i.pravatar.cc/150?img=16" alt="Avatar" width="36" height="36" loading="lazy" class="rounded-full flex-shrink-0 cursor-pointer">
+                        <div class="flex-1 min-w-0">
+                            <div class="fb-comment-bubble w-fit">
+                                <div class="fb-author">Victoria Clark</div>
+                                <div class="fb-text">It's not even about the scale for me. After watching Jillian explain the real gelatin trick, I finally understood why nothing worked before.</div>
+                                <div class="fb-like-count-box">
+                                    <div class="w-3.5 h-3.5 fb-like-icon"></div>
+                                    <span class="fb-like-count-text">48</span>
+                                </div>
+                            </div>
+                            <div class="fb-actions">
+                                <button>Like</button> · <button>Reply</button> · <span class="font-normal">4h</span>
+                            </div>
                         </div>
-                        <div class="fb-actions"><button>Like</button> · <button>Reply</button> · <span>3h</span></div>
+                    </div>
+                    <div class="flex gap-2 ml-11 mt-3">
+                        <img src="https://i.pravatar.cc/150?img=25" alt="Avatar" width="32" height="32" loading="lazy" class="rounded-full flex-shrink-0 cursor-pointer">
+                        <div class="flex-1 min-w-0">
+                            <div class="fb-comment-bubble w-fit">
+                                <div class="fb-author">Sarah Smith</div>
+                                <div class="fb-text">Yes! My appetite dropped so fast it honestly scared me at first.</div>
+                                <div class="fb-like-count-box">
+                                    <div class="w-3.5 h-3.5 fb-like-icon"></div>
+                                    <span class="fb-like-count-text">33</span>
+                                </div>
+                            </div>
+                            <div class="fb-actions">
+                                <button>Like</button> · <button>Reply</button> · <span class="font-normal">3h</span>
+                            </div>
+                        </div>
                     </div>
                 </div>
 
-                <div class="flex gap-3 ml-12">
-                    <img src="https://i.pravatar.cc/150?img=31" alt="Veronica" width="32" height="32" class="rounded-full h-8 w-8" loading="lazy">
-                    <div class="flex-1">
-                        <div class="fb-comment-bubble">
-                            <div class="fb-author">Veronica Escher</div>
-                            <div class="fb-text">I'm on day 10. Down 14 pounds already, and I didn't change what I eat.</div>
+                <div>
+                    <div class="flex gap-2">
+                        <img src="https://i.pravatar.cc/150?img=27" alt="Avatar" width="36" height="36" loading="lazy" class="rounded-full flex-shrink-0 cursor-pointer">
+                        <div class="flex-1 min-w-0">
+                            <div class="fb-comment-bubble w-fit">
+                                <div class="fb-author">Rachel Thomas</div>
+                                <div class="fb-text">I've tried diets, workouts, fasting… everything. Nothing made sense until Jillian Michaels broke down the true gelatin method and why scammers remove key ingredients.</div>
+                                <div class="fb-like-count-box">
+                                    <div class="w-3.5 h-3.5 fb-like-icon"></div>
+                                    <span class="fb-like-count-text">48</span>
+                                </div>
+                            </div>
+                            <div class="fb-actions">
+                                <button>Like</button> · <button>Reply</button> · <span class="font-normal">1d</span>
+                            </div>
                         </div>
-                        <div class="fb-actions"><button>Like</button> · <button>Reply</button> · <span>1d</span></div>
+                    </div>
+                    <div class="flex gap-2 ml-11 mt-3">
+                        <img src="https://i.pravatar.cc/150?img=28" alt="Avatar" width="32" height="32" loading="lazy" class="rounded-full flex-shrink-0 cursor-pointer">
+                        <div class="flex-1 min-w-0">
+                            <div class="fb-comment-bubble w-fit">
+                                <div class="fb-author">Lisa Walker</div>
+                                <div class="fb-text">Same. I thought gelatin was just dessert. Didn't expect this explanation at all.</div>
+                                <div class="fb-like-count-box">
+                                    <div class="w-3.5 h-3.5 fb-like-icon"></div>
+                                    <span class="fb-like-count-text">29</span>
+                                </div>
+                            </div>
+                            <div class="fb-actions">
+                                <button>Like</button> · <button>Reply</button> · <span class="font-normal">1d</span>
+                            </div>
+                        </div>
                     </div>
                 </div>
 
-                <p class="text-center text-[#1877f2] font-bold text-sm cursor-pointer py-4 hover:underline">Show more comments...</p>
+                <div>
+                    <div class="flex gap-2">
+                        <img src="https://i.pravatar.cc/150?img=29" alt="Avatar" width="36" height="36" loading="lazy" class="rounded-full flex-shrink-0 cursor-pointer">
+                        <div class="flex-1 min-w-0">
+                            <div class="fb-comment-bubble w-fit">
+                                <div class="fb-author">Donna Clark</div>
+                                <div class="fb-text">Has anyone actually seen real weight loss from this? Or is it just talk?</div>
+                                <div class="fb-like-count-box">
+                                    <div class="w-3.5 h-3.5 fb-like-icon"></div>
+                                    <span class="fb-like-count-text">45</span>
+                                </div>
+                            </div>
+                            <div class="fb-actions">
+                                <button>Like</button> · <button>Reply</button> · <span class="font-normal">1d</span>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="flex gap-2 ml-11 mt-3">
+                        <img src="https://i.pravatar.cc/150?img=31" alt="Avatar" width="32" height="32" loading="lazy" class="rounded-full flex-shrink-0 cursor-pointer">
+                        <div class="flex-1 min-w-0">
+                            <div class="fb-comment-bubble w-fit">
+                                <div class="fb-author">Veronica Escher</div>
+                                <div class="fb-text">I'm on day 10 after following the real gelatin trick Jillian explains. Down 14 pounds already, and I didn't change what I eat.</div>
+                                <div class="fb-like-count-box">
+                                    <div class="w-3.5 h-3.5 fb-like-icon"></div>
+                                    <span class="fb-like-count-text">50</span>
+                                </div>
+                            </div>
+                            <div class="fb-actions">
+                                <button>Like</button> · <button>Reply</button> · <span class="font-normal">1d</span>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="flex gap-2 ml-11 mt-3">
+                        <img src="https://i.pravatar.cc/150?img=32" alt="Avatar" width="32" height="32" loading="lazy" class="rounded-full flex-shrink-0 cursor-pointer">
+                        <div class="flex-1 min-w-0">
+                            <div class="fb-comment-bubble w-fit">
+                                <div class="fb-author">Savannah Perry</div>
+                                <div class="fb-text">I'm further in. About 27 pounds in 15 days. What shocked me most was how full I feel all day.</div>
+                                <div class="fb-like-count-box">
+                                    <div class="w-3.5 h-3.5 fb-like-icon"></div>
+                                    <span class="fb-like-count-text">48</span>
+                                </div>
+                            </div>
+                            <div class="fb-actions">
+                                <button>Like</button> · <button>Reply</button> · <span class="font-normal">1d</span>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+
+                <div>
+                    <div class="flex gap-2">
+                        <img src="https://i.pravatar.cc/150?img=38" alt="Avatar" width="36" height="36" loading="lazy" class="rounded-full flex-shrink-0 cursor-pointer">
+                        <div class="flex-1 min-w-0">
+                            <div class="fb-comment-bubble w-fit">
+                                <div class="fb-author">Melissa Richardson</div>
+                                <div class="fb-text">I almost closed the video when I saw how long it was. Glad I didn't. Jillian exposing the fake gelatin recipes hooked me instantly.</div>
+                                <div class="fb-like-count-box">
+                                    <div class="w-3.5 h-3.5 fb-like-icon"></div>
+                                    <span class="fb-like-count-text">46</span>
+                                </div>
+                            </div>
+                            <div class="fb-actions">
+                                <button>Like</button> · <button>Reply</button> · <span class="font-normal">1d</span>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="flex gap-2 ml-11 mt-3">
+                        <img src="https://i.pravatar.cc/150?img=41" alt="Avatar" width="32" height="32" loading="lazy" class="rounded-full flex-shrink-0 cursor-pointer">
+                        <div class="flex-1 min-w-0">
+                            <div class="fb-comment-bubble w-fit">
+                                <div class="fb-author">Hailey Foster</div>
+                                <div class="fb-text">Same. Once she said scammers were selling flour capsules, I knew she was serious.</div>
+                                <div class="fb-like-count-box">
+                                    <div class="w-3.5 h-3.5 fb-like-icon"></div>
+                                    <span class="fb-like-count-text">35</span>
+                                </div>
+                            </div>
+                            <div class="fb-actions">
+                                <button>Like</button> · <button>Reply</button> · <span class="font-normal">1d</span>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+
+                <div>
+                    <div class="flex gap-2">
+                        <img src="https://i.pravatar.cc/150?img=44" alt="Avatar" width="36" height="36" loading="lazy" class="rounded-full flex-shrink-0 cursor-pointer">
+                        <div class="flex-1 min-w-0">
+                            <div class="fb-comment-bubble w-fit">
+                                <div class="fb-author">Nicole Patterson</div>
+                                <div class="fb-text">The craziest part is realizing the gelatin trick itself wasn't the scam — the distorted versions were.</div>
+                                <div class="fb-like-count-box">
+                                    <div class="w-3.5 h-3.5 fb-like-icon"></div>
+                                    <span class="fb-like-count-text">45</span>
+                                </div>
+                            </div>
+                            <div class="fb-actions">
+                                <button>Like</button> · <button>Reply</button> · <span class="font-normal">2d</span>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="flex gap-2 ml-11 mt-3">
+                        <img src="https://i.pravatar.cc/150?img=10" alt="Avatar" width="32" height="32" loading="lazy" class="rounded-full flex-shrink-0 cursor-pointer">
+                        <div class="flex-1 min-w-0">
+                            <div class="fb-comment-bubble w-fit">
+                                <div class="fb-author">Abigail Walker</div>
+                                <div class="fb-text">Exactly. Jillian being the original creator changes everything.</div>
+                                <div class="fb-like-count-box">
+                                    <div class="w-3.5 h-3.5 fb-like-icon"></div>
+                                    <span class="fb-like-count-text">27</span>
+                                </div>
+                            </div>
+                            <div class="fb-actions">
+                                <button>Like</button> · <button>Reply</button> · <span class="font-normal">2d</span>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+
+                <div>
+                    <div class="flex gap-2">
+                        <img src="https://i.pravatar.cc/150?img=47" alt="Avatar" width="36" height="36" loading="lazy" class="rounded-full flex-shrink-0 cursor-pointer">
+                        <div class="flex-1 min-w-0">
+                            <div class="fb-comment-bubble w-fit">
+                                <div class="fb-author">Emily Rodriguez</div>
+                                <div class="fb-text">I stayed because Jillian mentioned women losing 50+ pounds once the hormones activate naturally. That's when I grabbed my notebook.</div>
+                                <div class="fb-like-count-box">
+                                    <div class="w-3.5 h-3.5 fb-like-icon"></div>
+                                    <span class="fb-like-count-text">48</span>
+                                </div>
+                            </div>
+                            <div class="fb-actions">
+                                <button>Like</button> · <button>Reply</button> · <span class="font-normal">2d</span>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="flex gap-2 ml-11 mt-3">
+                        <img src="https://i.pravatar.cc/150?img=48" alt="Avatar" width="32" height="32" loading="lazy" class="rounded-full flex-shrink-0 cursor-pointer">
+                        <div class="flex-1 min-w-0">
+                            <div class="fb-comment-bubble w-fit">
+                                <div class="fb-author">Sophia Martinez</div>
+                                <div class="fb-text">Same. She explains it in a way that finally makes sense.</div>
+                                <div class="fb-like-count-box">
+                                    <div class="w-3.5 h-3.5 fb-like-icon"></div>
+                                    <span class="fb-like-count-text">24</span>
+                                </div>
+                            </div>
+                            <div class="fb-actions">
+                                <button>Like</button> · <button>Reply</button> · <span class="font-normal">2d</span>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+
+                <div>
+                    <div class="flex gap-2">
+                        <img src="https://i.pravatar.cc/150?img=49" alt="Avatar" width="36" height="36" loading="lazy" class="rounded-full flex-shrink-0 cursor-pointer">
+                        <div class="flex-1 min-w-0">
+                            <div class="fb-comment-bubble w-fit">
+                                <div class="fb-author">Hailey Foster</div>
+                                <div class="fb-text">Honestly, after hearing Jillian Michaels explain why GLP-1 and GIP matter, I realized no diet ever fixed the real problem.</div>
+                                <div class="fb-like-count-box">
+                                    <div class="w-3.5 h-3.5 fb-like-icon"></div>
+                                    <span class="fb-like-count-text">45</span>
+                                </div>
+                            </div>
+                            <div class="fb-actions">
+                                <button>Like</button> · <button>Reply</button> · <span class="font-normal">2d</span>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="flex gap-2 ml-11 mt-3">
+                        <img src="https://i.pravatar.cc/150?img=16" alt="Avatar" width="32" height="32" loading="lazy" class="rounded-full flex-shrink-0 cursor-pointer">
+                        <div class="flex-1 min-w-0">
+                            <div class="fb-comment-bubble w-fit">
+                                <div class="fb-author">Victoria Clark</div>
+                                <div class="fb-text">That explanation alone was worth watching the whole video.</div>
+                                <div class="fb-like-count-box">
+                                    <div class="w-3.5 h-3.5 fb-like-icon"></div>
+                                    <span class="fb-like-count-text">30</span>
+                                </div>
+                            </div>
+                            <div class="fb-actions">
+                                <button>Like</button> · <button>Reply</button> · <span class="font-normal">2d</span>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+
+                <div>
+                    <div class="flex gap-2">
+                        <img src="https://i.pravatar.cc/150?img=26" alt="Avatar" width="36" height="36" loading="lazy" class="rounded-full flex-shrink-0 cursor-pointer">
+                        <div class="flex-1 min-w-0">
+                            <div class="fb-comment-bubble w-fit">
+                                <div class="fb-author">Amanda Miller</div>
+                                <div class="fb-text">With so many scams online, it's rare to see someone openly calling them out. Jillian didn't just sell hope — she explained why we were all misled.</div>
+                                <div class="fb-like-count-box">
+                                    <div class="w-3.5 h-3.5 fb-like-icon"></div>
+                                    <span class="fb-like-count-text">49</span>
+                                </div>
+                            </div>
+                            <div class="fb-actions">
+                                <button>Like</button> · <button>Reply</button> · <span class="font-normal">2d</span>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="flex gap-2 ml-11 mt-3">
+                        <img src="https://i.pravatar.cc/150?img=43" alt="Avatar" width="32" height="32" loading="lazy" class="rounded-full flex-shrink-0 cursor-pointer">
+                        <div class="flex-1 min-w-0">
+                            <div class="fb-comment-bubble w-fit">
+                                <div class="fb-author">Rachel Thomas</div>
+                                <div class="fb-text">Exactly. This finally feels like the true gelatin trick, not another trap.</div>
+                                <div class="fb-like-count-box">
+                                    <div class="w-3.5 h-3.5 fb-like-icon"></div>
+                                    <span class="fb-like-count-text">32</span>
+                                </div>
+                            </div>
+                            <div class="fb-actions">
+                                <button>Like</button> · <button>Reply</button> · <span class="font-normal">2d</span>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+
+                <div class="pt-6 mt-2 border-t border-gray-100 text-center">
+                    <p class="text-[13px] text-gray-500 font-semibold bg-gray-50 inline-block px-3 py-1 rounded-full">This post is no longer receiving comments.</p>
+                </div>
             </div>
         </section>
 
