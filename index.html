@@ -7,11 +7,12 @@
     <meta name="description" content="Official health report on the gelatin trick. Watch the presentation.">
     
     <link rel="stylesheet" href="./style.css">
+    
     <link rel="preconnect" href="https://fonts.googleapis.com">
     <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
     <link href="https://fonts.googleapis.com/css2?family=Inter:wght@400;700;900&display=swap" rel="stylesheet">
     
-    <link rel="preload" href="https://scripts.converteai.net/lib/js/smartplayer-wc/v4/smartplayer.js" as="script">
+    <link rel="preload" href="images/abc_logo.webp" as="image" fetchpriority="high">
 </head>
 <body class="bg-gray-50 text-gray-900 overflow-x-hidden font-inter">
 
@@ -35,10 +36,14 @@
 
     <main class="w-full max-w-5xl mx-auto bg-white shadow-xl min-h-screen">
         
-        <div class="relative w-full bg-black aspect-video shadow-md overflow-hidden">
-            <vturb-smartplayer id="vid-699de0a8f5e86dda40b4cdcc" style="display: block; width: 100%; aspect-ratio: 16/9;"></vturb-smartplayer> 
-            <script type="text/javascript" async src="https://scripts.converteai.net/6e3ae2f6-ad64-483b-9bc5-bafc50ec8005/players/699de0a8f5e86dda40b4cdcc/v4/player.js"></script>
-        </div>
+        <div id="video-container" class="relative w-full bg-black aspect-video shadow-md overflow-hidden cursor-pointer">
+            <div id="video-placeholder" class="absolute inset-0 flex items-center justify-center bg-black">
+                <img src="images/thumb-vsl.webp" alt="Play Video" width="1280" height="720" class="w-full h-full object-cover opacity-60">
+                <div class="absolute w-16 h-16 bg-[#FD4C31] rounded-full flex items-center justify-center shadow-2xl">
+                    <svg class="w-8 h-8 text-white" fill="currentColor" viewBox="0 0 20 20"><path d="M6.3 2.841A1.5 1.5 0 004 4.11V15.89a1.5 1.5 0 002.3 1.269l9.333-5.89a1.5 1.5 0 000-2.538L6.3 2.841z"></path></svg>
+                </div>
+            </div>
+            </div>
 
         <div class="bg-white py-3 px-4 border-b border-gray-100 flex items-center justify-center gap-2">
             <span class="flex h-2.5 w-2.5 relative">
@@ -58,7 +63,7 @@
         <section id="secao_pitch" class="esconder bg-[#f9f9f9] px-4 py-12 border-t border-gray-200">
             <div class="max-w-5xl mx-auto">
                 <h2 class="text-3xl font-black text-center text-gray-900 mb-10 uppercase">Special Discount Packages</h2>
-                <div class="grid grid-cols-1 md:grid-cols-3 gap-8 items-start">
+                <div class="grid grid-cols-1 md:grid-cols-3 gap-8">
                     <div class="pr-card pr-card--highlight">
                         <div class="pr-badge pr-badge--highlight">BEST VALUE!</div>
                         <h3 class="pr-title">6 BOTTLES</h3>
@@ -85,90 +90,78 @@
         </section>
 
         <section class="bg-white px-4 py-10 max-w-4xl mx-auto border-t border-gray-100">
-            <div class="flex items-center gap-2 mb-8 pb-3 border-b border-gray-200">
-                <span class="font-bold text-gray-900 text-lg">3,158 Comments</span>
-                <span class="text-gray-400 font-normal ml-auto text-sm">Sort by <span class="text-[#1877f2] font-semibold cursor-pointer">Top</span></span>
-            </div>
-
+            <h3 class="font-bold text-gray-900 text-lg border-b pb-3 mb-8">3,158 Comments</h3>
             <div class="space-y-6">
                 <div class="flex gap-3">
-                    <img src="https://i.pravatar.cc/150?img=10" alt="Abigail" width="40" height="40" class="rounded-full h-10 w-10" loading="lazy">
+                    <img src="https://i.pravatar.cc/150?img=10" alt="Abigail" width="40" height="40" class="rounded-full" loading="lazy">
                     <div class="flex-1">
                         <div class="fb-comment-bubble">
                             <div class="fb-author">Abigail Walker</div>
-                            <div class="fb-text">I swear I thought this was just another one of those long, boring scam videos… But hearing Jillian Michaels explain the true gelatin trick actually made me stay and watch. This finally feels different.</div>
+                            <div class="fb-text">I swear I thought this was just another boring scam video… But Jillian Michaels actually made sense. Down 14 pounds!</div>
                         </div>
                         <div class="fb-actions"><button>Like</button> · <button>Reply</button> · <span>2h</span></div>
                     </div>
                 </div>
-
-                <div class="flex gap-3 ml-12">
-                    <img src="https://i.pravatar.cc/150?img=5" alt="Katherine" width="32" height="32" class="rounded-full h-8 w-8" loading="lazy">
-                    <div class="flex-1">
-                        <div class="fb-comment-bubble">
-                            <div class="fb-author">Katherine Lewis</div>
-                            <div class="fb-text">Same here. When she said most gelatin recipes were taught wrong on purpose, it clicked instantly.</div>
-                        </div>
-                        <div class="fb-actions"><button>Like</button> · <button>Reply</button> · <span>1h</span></div>
-                    </div>
                 </div>
-
-                <div class="flex gap-3">
-                    <img src="https://i.pravatar.cc/150?img=31" alt="Veronica" width="40" height="40" class="rounded-full h-10 w-10" loading="lazy">
-                    <div class="flex-1">
-                        <div class="fb-comment-bubble">
-                            <div class="fb-author">Veronica Escher</div>
-                            <div class="fb-text">I'm on day 10 after following the real gelatin trick. Down 14 pounds already, and I didn't change what I eat.</div>
-                        </div>
-                        <div class="fb-actions"><button>Like</button> · <button>Reply</button> · <span>1d</span></div>
-                    </div>
-                </div>
-                
-                <p class="text-center text-[#1877f2] font-bold text-sm cursor-pointer py-4 hover:underline">Show 15 more comments...</p>
-            </div>
         </section>
 
         <footer class="bg-gray-900 py-10 text-center text-gray-500 text-[11px] px-4">
-            <p class="mb-4">*Results may vary. This is an advertorial and not a news article.</p>
             <p>© 2026 Health News. All rights reserved.</p>
         </footer>
     </main>
 
     <script>
-        // Lógica de Delay e Tracking de Performance
-        const delaySeconds = 3654;
-        const player = document.querySelector("vturb-smartplayer");
-        
-        player.addEventListener("player:ready", () => {
-            player.displayHiddenElements(delaySeconds, [".esconder"], { persist: true });
-        });
-
-        // Carregamento de Scripts APÓS o LCP (PageSpeed Booster)
-        let scriptsLoaded = false;
-        const loadAllTracking = () => {
-            if (scriptsLoaded) return;
-            scriptsLoaded = true;
-
-            // 1. UTMify
-            const utm = document.createElement('script');
-            utm.src = "https://cdn.utmify.com.br/scripts/utms/latest.js";
-            utm.setAttribute('data-utmify-prevent-subids', '');
-            document.body.appendChild(utm);
-
-            // 2. Meta Pixels (8 IDs)
-            !function(f,b,e,v,n,t,s){if(f.fbq)return;n=f.fbq=function(){n.callMethod?
-            n.callMethod.apply(n,arguments):n.queue.push(arguments)};if(!f._fbq)f._fbq=n;
-            n.push=n;n.loaded=!0;n.version='2.0';n.queue=[];t=b.createElement(e);t.async=!0;
-            t.src=v;s=b.getElementsByTagName(e)[0];s.parentNode.insertBefore(t,s)}
-            (window,document,'script','https://connect.facebook.net/en_US/fbevents.js');
-
-            const ids = ['901335525837933', '1435316934639038', '2157661164979333', '1930652510882312', '1304063911565424', '797801516088163', '885506097636747', '1910035972952167'];
-            ids.forEach(id => fbq('init', id));
-            fbq('track', 'PageView');
+        // 1. CARREGAMENTO DO VSL (Lazy Loading Inteligente)
+        const loadVideo = () => {
+            const container = document.getElementById('video-container');
+            if (container.classList.contains('loaded')) return;
+            
+            container.innerHTML = `<vturb-smartplayer id="vid-699de0a8f5e86dda40b4cdcc" style="display: block; width: 100%; aspect-ratio: 16/9;"></vturb-smartplayer>`;
+            
+            const script = document.createElement('script');
+            script.src = "https://scripts.converteai.net/6e3ae2f6-ad64-483b-9bc5-bafc50ec8005/players/699de0a8f5e86dda40b4cdcc/v4/player.js";
+            script.async = true;
+            document.body.appendChild(script);
+            
+            container.classList.add('loaded');
+            
+            // Ativa o delay após o player carregar
+            setTimeout(() => {
+                const player = document.querySelector("vturb-smartplayer");
+                if(player) {
+                    player.addEventListener("player:ready", () => {
+                        player.displayHiddenElements(3654, [".esconder"], { persist: true });
+                    });
+                }
+            }, 1000);
         };
 
-        ['scroll', 'touchstart', 'click'].forEach(e => window.addEventListener(e, loadAllTracking, {once:true}));
-        setTimeout(loadAllTracking, 4000); // Failsafe para 4 segundos
+        // Carrega o vídeo no primeiro scroll ou após 2 segundos
+        window.addEventListener('scroll', loadVideo, { once: true, passive: true });
+        setTimeout(loadVideo, 2000);
+
+        // 2. TRACKING (Ainda mais adiado para não afetar o TBT)
+        const loadTracking = () => {
+            if (window.scriptsReady) return;
+            window.scriptsReady = true;
+
+            const utm = document.createElement('script');
+            utm.src = "https://cdn.utmify.com.br/scripts/utms/latest.js";
+            utm.async = true;
+            document.body.appendChild(utm);
+
+            const fb = document.createElement('script');
+            fb.src = "https://connect.facebook.net/en_US/fbevents.js";
+            fb.async = true;
+            fb.onload = () => {
+                const ids = ['901335525837933', '1435316934639038', '2157661164979333', '1930652510882312', '1304063911565424', '797801516088163', '885506097636747', '1910035972952167'];
+                ids.forEach(id => { fbq('init', id); });
+                fbq('track', 'PageView');
+            };
+            document.body.appendChild(fb);
+        };
+
+        setTimeout(loadTracking, 5000); // Carrega pixels após 5 segundos
     </script>
 </body>
 </html>
