@@ -1,4 +1,4 @@
-import { defineConfig } from 'vite'; // ESSA LINHA É OBRIGATÓRIA
+import { defineConfig } from 'vite';
 
 export default defineConfig({
   build: {
